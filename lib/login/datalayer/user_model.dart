@@ -1,0 +1,57 @@
+class UserModel {
+  late dynamic id;
+  late dynamic local_unique_code;
+  late dynamic global_unique_code;
+  late dynamic username;
+  late dynamic first_name;
+  late dynamic last_name;
+  late dynamic birth_date;
+  late dynamic email;
+  late dynamic father_name;
+  late dynamic library_id;
+  late dynamic grade_id;
+  late dynamic class_id;
+  late dynamic academic_year;
+  late dynamic gender;
+  late dynamic user_type_id;
+  late dynamic hidden_public_shelves;
+  late dynamic main_color;
+  late dynamic home;
+  late dynamic profile_pic;
+  late dynamic phone;
+  late dynamic printed;
+  late dynamic enabled;
+  late dynamic email_verified_at;
+  late dynamic created_at;
+  late dynamic updated_at;
+  late dynamic deleted_at;
+
+  UserModel.fromJson(Map<String, dynamic> json) {
+      id = json['id'];
+      local_unique_code = json['local_unique_code'];
+      global_unique_code = json['global_unique_code'];
+      username = json['username'];
+      first_name = json['first_name'];
+      last_name = json['last_name'];
+      birth_date = json['birth_date'];
+      email = json['email'];
+      father_name = json['father_name'];
+      library_id = json['library_id'];
+      grade_id = json['grade_id'];
+      class_id = json['class_id'];
+      academic_year = json['academic_year'];
+      gender = json['gender'];
+      user_type_id = json['user_type_id'];
+      hidden_public_shelves = json['hidden_public_shelves'];
+      main_color = json['main_color'];
+      home = json['home'];
+      profile_pic = json['profile_pic'];
+      phone = json['phone'];
+      printed = json['printed'];
+      enabled = json['enabled'];
+      email_verified_at = json['email_verified_at'];
+      created_at = json['created_at'];
+      updated_at = json['updated_at'];
+      deleted_at = json['deleted_at'];
+  }
+}
